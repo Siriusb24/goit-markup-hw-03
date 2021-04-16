@@ -29,6 +29,7 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    outline: 1px solid teal;
 }
 
 li {
@@ -36,33 +37,45 @@ li {
 }
 
 /*heder*/
+
 .page-header {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
+    margin-right: 93px;
     color: var(--secondary-color);
-}
-
-.menu {
-    display: inline-flex;
-    align-items: center;
-    margin-left: auto;
-}
-
-.menu-content:not(:last-child) {
-    margin-right: 50px;
-}
-
-.logo {
-    margin-right: 95px;
 }
 
 .logo .item {
     color: var(--accent-color);
 }
 
+.menu {
+    display: inline-flex;
+}
+
+.menu .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.menu .menu-content:not(:last-child) {
+    margin-right: 50px;
+}
+
+.communication {
+    display: flex;
+}
+
+.communication-nav:not(:last-child) {
+    margin-right: 50px;
+}
+
+.list,
 .links {
     margin: 0;
     padding-left: 0;
@@ -72,12 +85,12 @@ li {
     letter-spacing: 0.02em;
 }
 
-.links .link {
+.list .link {
     text-decoration: none;
     color: var(--secondary-color);
 }
 
-.links .link.current {
+.list .link.current {
     color: var(--accent-color);
 }
 .links .contacts {
@@ -85,8 +98,8 @@ li {
     color: var(--main-color);
 }
 
-.links .link:hover,
-.links .link:focus {
+.list .link:hover,
+.list .link:focus {
     color: var(--accent-color);
 }
 
@@ -103,27 +116,36 @@ li {
 .hero {
     background-color: var(--alternative-bgr);
     color: var(--alt-color);
+    text-align: center;
+}
+
+.main {
+    padding-bottom: 200px;
 }
 
 .hero .main-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 200px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
 }
 
 .hero .btn {
-    color: var(--alternative-color);
-    background-color: var(--accent-color);
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 15);
+    border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+    color: var(--alternative-color);
+    background-color: var(--accent-color);
 }
 
 .hero .btn:hover,
@@ -149,11 +171,25 @@ li {
     overflow: hidden;
 }
 
-.title .item {
+.title .title-items {
+    display: inline-flex;
+    align-self: center;
+    padding-top: 94px;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.title-items .item {
     text-decoration: none;
+    margin-right: 30px;
+}
+
+.title-items .item:last-child {
+    margin-right: 0;
 }
 
 .title .skills {
+    margin-top: 0;
+    margin-bottom: 10px;
     color: var(--secondary-color);
     font-weight: 700;
     font-size: 14px;
@@ -163,6 +199,8 @@ li {
 }
 
 .text {
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -171,6 +209,9 @@ li {
 
 .work,
 .team {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 94px;
     color: var(--secondary-color);
     font-weight: 700;
     font-size: 36px;
@@ -179,12 +220,43 @@ li {
     letter-spacing: 0.03em;
 }
 
+.makets {
+    display: inline-flex;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-bottom: 94px;
+}
+
+.makets .maket-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .organization {
     background-color: var(--thirt-color);
     text-align: center;
 }
 
+.team-woker {
+    display: inline-flex;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-bottom: 94px;
+}
+
+.card-woker {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-woker .card-woker:not(:last-child) {
+    margin-right: 30px;
+}
+
 .members {
+    margin-top: 30px;
     color: var(--secondary-color);
     font-weight: 500;
     font-size: 16px;
@@ -193,6 +265,8 @@ li {
 }
 
 .position {
+    margin-top: 10px;
+    padding-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -202,6 +276,11 @@ li {
 
 .about {
     background-color: var(--alternative-bgr);
+}
+
+.alternativ {
+    display: block;
+    padding-top: 60px;
 }
 
 .logo-two {
@@ -219,10 +298,17 @@ li {
 }
 
 .info {
+    margin-top: 20px;
+    padding-bottom: 60px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+
+.links .post {
+    margin-top: 9px;
+    margin-bottom: 6px;
 }
 
 .links .city {
@@ -254,7 +340,19 @@ li {
 }
 
 /*портфоліо стилізація*/
-.filters {
+.main-filters .filters-item {
+    display: inline-flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 94px;
+}
+
+.main-filters .filters-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.filters-item .filters {
     color: var(--secondary-color);
     background-color: var(--thirt-color);
     font-weight: 500;
