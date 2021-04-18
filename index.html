@@ -62,7 +62,7 @@
             <!--блок контенту-->
             <!--герой-->
             <section class="hero">
-                <div class="main conteiner">
+                <div class="conteiner">
                     <h1 class="main-title">
                         Эффективные решения для вашего бизнеса
                     </h1>
@@ -71,10 +71,10 @@
                 </div>
             </section>
             <!--короткий загальний опис-->
-            <section class="title">
+            <section class="specifics">
                 <div class="conteiner">
                     <h2 class="visually-hidden">Особенности</h2>
-                    <ul class="title-items">
+                    <ul class="specifics-items">
                         <li class="item">
                             <h3 class="skills">Внимание к деталям</h3>
                             <p class="text">
@@ -107,8 +107,8 @@
                 </div>
             </section>
             <!--роботи студії-->
-            <div class="conteiner">
-                <section class="projects">
+            <section class="projects">
+                <div class="conteiner">
                     <h2 class="work">Чем мы занимаемся</h2>
                     <ul class="makets">
                         <li class="maket-item">
@@ -136,8 +136,8 @@
                             />
                         </li>
                     </ul>
-                </section>
-            </div>
+                </div>
+            </section>
             <!--команда-->
             <section class="organization">
                 <div class="conteiner">
@@ -150,8 +150,12 @@
                                 height="260"
                                 alt="Игорь Демьяненко"
                             />
-                            <h3 class="members">Игорь Демьяненко</h3>
-                            <p lang="en" class="position">Product Designer</p>
+                            <div class="card-item">
+                                <h3 class="members">Игорь Демьяненко</h3>
+                                <p lang="en" class="position">
+                                    Product Designer
+                                </p>
+                            </div>
                         </li>
                         <li class="card-woker">
                             <img
@@ -160,8 +164,12 @@
                                 height="260"
                                 alt="Ольга Репина"
                             />
-                            <h3 class="members">Ольга Репина</h3>
-                            <p lang="en" class="position">Frontend Developer</p>
+                            <div class="card-item">
+                                <h3 class="members">Ольга Репина</h3>
+                                <p lang="en" class="position">
+                                    Frontend Developer
+                                </p>
+                            </div>
                         </li>
                         <li class="card-woker">
                             <img
@@ -170,8 +178,10 @@
                                 height="260"
                                 alt="Николай тарасов"
                             />
-                            <h3 class="members">Николай Тарасов</h3>
-                            <p lang="en" class="position">Marketing</p>
+                            <div class="card-item">
+                                <h3 class="members">Николай Тарасов</h3>
+                                <p lang="en" class="position">Marketing</p>
+                            </div>
                         </li>
                         <li class="card-woker">
                             <img
@@ -180,23 +190,25 @@
                                 height="260"
                                 alt="Михаил Ермаков"
                             />
-                            <h3 class="members">Михаил Ермаков</h3>
-                            <p lang="en" class="position">UI Designer</p>
+                            <div class="card-item">
+                                <h3 class="members">Михаил Ермаков</h3>
+                                <p lang="en" class="position">UI Designer</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </section>
         </main>
         <!--підвал сторінки-->
-        <footer class="about">
+        <footer class="basement">
             <div class="conteiner">
-                <a href="./index.html" class="logo alternativ"
+                <a href="./index.html" class="logo"
                     ><span class="item">Web</span
                     ><span class="logo-two">Studio</span></a
                 >
                 <address class="info">
                     <ul class="links">
-                        <li>
+                        <li class="info-item">
                             <a
                                 href="https://goo.gl/maps/6gxEorECzuaQfL2a7"
                                 target="_blank"
@@ -205,13 +217,15 @@
                                 >г. Киев, пр-т Леси Украинки, 26</a
                             >
                         </li>
-                        <li class="post">
-                            <a href="mailto:info@devstudio.com" class="cnt"
+                        <li class="info-item">
+                            <a
+                                href="mailto:info@devstudio.com"
+                                class="alt-contact"
                                 >info@devstudio.com</a
                             >
                         </li>
-                        <li>
-                            <a href="tel:+380961111111" class="cnt"
+                        <li class="info-item">
+                            <a href="tel:+380961111111" class="alt-contact"
                                 >+38 096 111 11 11</a
                             >
                         </li>

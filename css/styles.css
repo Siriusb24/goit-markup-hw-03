@@ -113,19 +113,18 @@ li {
 
 /*герой*/
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--alternative-bgr);
     color: var(--alt-color);
     text-align: center;
 }
 
-.main {
-    padding-bottom: 200px;
-}
-
 .hero .main-title {
-    margin-top: 0;
+    text-transform: uppercase;
+    margin: 0 auto;
+    max-width: 696px;
     margin-bottom: 30px;
-    padding-top: 200px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -154,7 +153,8 @@ li {
     background-color: var(--alt-color);
 }
 
-.title {
+.specifics {
+    padding-top: 94px;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -171,21 +171,20 @@ li {
     overflow: hidden;
 }
 
-.title .title-items {
+.specifics .specifics-items {
     display: flex;
     justify-content: space-between;
     align-self: center;
-    padding-top: 94px;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
 }
-.title-items .item {
+.specifics-items .item {
     width: 270px;
     text-decoration: none;
 }
 
-.title .skills {
+.specifics .skills {
     margin-top: 0;
     margin-bottom: 10px;
     color: var(--secondary-color);
@@ -205,11 +204,14 @@ li {
     letter-spacing: 0.03em;
 }
 
+.projects {
+    padding-top: 94px;
+}
+
 .work,
 .team {
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 94px;
     color: var(--secondary-color);
     font-weight: 700;
     font-size: 36px;
@@ -223,7 +225,6 @@ li {
     margin-top: 50px;
     margin-bottom: 0;
     padding-left: 0;
-    padding-bottom: 94px;
 }
 
 .makets .maket-item:not(:last-child) {
@@ -231,16 +232,17 @@ li {
 }
 
 .organization {
+    padding-top: 94px;
+    padding-bottom: 10px;
     background-color: var(--thirt-color);
     text-align: center;
 }
 
 .team-woker {
-    display: inline-flex;
+    display: flex;
     margin-top: 50px;
     margin-bottom: 0;
     padding-left: 0;
-    padding-bottom: 94px;
 }
 
 .card-woker {
@@ -249,12 +251,16 @@ li {
     border-radius: 0px 0px 4px 4px;
 }
 
+.card-woker .card-item {
+    padding: 30px 32px;
+}
+
 .team-woker .card-woker:not(:last-child) {
     margin-right: 30px;
 }
 
 .members {
-    margin-top: 30px;
+    margin: 0 0 10px 0;
     color: var(--secondary-color);
     font-weight: 500;
     font-size: 16px;
@@ -263,8 +269,7 @@ li {
 }
 
 .position {
-    margin-top: 10px;
-    padding-bottom: 30px;
+    margin: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -272,13 +277,10 @@ li {
     letter-spacing: 0.03em;
 }
 
-.about {
-    background-color: var(--alternative-bgr);
-}
-
-.alternativ {
-    display: block;
+.basement {
     padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--alternative-bgr);
 }
 
 .logo-two {
@@ -297,16 +299,14 @@ li {
 
 .info {
     margin-top: 20px;
-    padding-bottom: 60px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-.links .post {
-    margin-top: 9px;
-    margin-bottom: 6px;
+.info .info-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .links .city {
@@ -318,7 +318,7 @@ li {
     letter-spacing: 0.03em;
 }
 
-.links .cnt {
+.links .alt-contact {
     text-decoration: none;
     color: var(--main-color);
     font-weight: 400;
@@ -327,8 +327,8 @@ li {
     letter-spacing: 0.03em;
 }
 
-.links .cnt:hover,
-.links .cnt:focus {
+.links .alt-contact:hover,
+.links .alt-contact:focus {
     color: var(--accent-color);
 }
 
@@ -338,7 +338,9 @@ li {
 }
 
 /*портфоліо стилізація*/
-.box {
+.our-works {
+    padding-top: 94px;
+    padding-bottom: 94px;
     border-top: 1px solid #eeeeee;
 }
 
@@ -350,7 +352,6 @@ li {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
-    padding-top: 94px;
 }
 
 .main-filters .filters-item:not(:last-child) {
